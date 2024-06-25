@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1.300;1.400;1.500;1.600;1.700;1.800;1.900&display=swap');
+
+:root {
+    --color1: #fff;
+    --color2: #f0f0f0;
+    --color3: #edb92f;
+    --color4: #c84316;
+    --color5: #9c120a;
+    --color6: #000;
+    --color7: rgb(255, 187, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header form input {
+    width: 150px;
+    height: 35px;
+    border-radius: 30px;
+}
+
+#search {
+    background-color: transparent;
+    border: 2px solid var(--color7);
+    padding: 0px 10px;
+    font-size: 14px;
+    outline: none;
+}
+
+#log {
+    background-color: var(--color7);
+    border: none;
+}
+
+#openMenu {
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.after-header-main, .bem-vindo, .btn-main, .btn-assistir {
+    display: flex;
+}
+
+.after-header-main {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.esquerda {
+    width: 450px;
+    height: 30vh;
+
+}
+
+.direita {
+    width: 450px;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.esquerda .bem-vindo {
+    width: 280px;
+    height: 40px;
+    background-color: var(--color7);
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.halloween {
+    width: 30px;
+}
+
+.esquerda h1 {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.esquerda p {
+    margin-bottom: 20px;
+}
+
+.esquerda .btn-main {
+    width: 300px;
+    justify-content: space-between;
+}
+
+.esquerda .btn-main button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    
+    background-color: var(--color1);
+    box-shadow: 0 0 5px black;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forma-display {
+    width: 30%;
+    height: 30%;
+    clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+    background-color: var(--color3);
+}
+
+.btn-assistir {
+    width: 150px;
+    border: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@keyframes anima {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+.btn-assistir:hover {
+    
+    animation-name: anima;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+.btn-main input:hover {
+    animation-name: anima;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.btn-main input {
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--color7);
+    color: var(--color6);
+    box-shadow: 0 0 10px var(--color3);
+}
+
+@keyframes anima {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+.btn-main input:hover {
+    animation-name: anima;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.over img {
+    margin: 17px 0px 0px 10px;
+}
+
+.over p {
+    margin-bottom: 2px;
+}
+
+
+.over {
+    border: 2px solid rgba(128, 128, 128, 0.281);
+    border-radius: 30px;
+
+    position: relative;
+    width: 210px;
+    height: 70px;
+
+
+    top: 200px;
+    left: -40px;
+
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+
+    font-size: 14px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.over-s img {
+    margin: 17px 0px 0px 10px;
+}
+
+.over-s p {
+    margin-bottom: 2px;
+}
+
+.over-s {
+    border: 2px solid rgba(128, 128, 128, 0.281);
+    border-radius: 30px;
+
+    position: relative;
+    width: 300px;
+    height: 60px;
+
+    justify-content: space-around;
+
+    top: 300px;
+    left: -90px;
+
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+
+    font-size: 14px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 0px 10px;
+}
+
+.client-happy {
+    width: 195px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.client-happy .img-happy {
+    width: 90px;
+    height: 50px;
+}
+
+.img-main {
+    width: 450px;
+}
+
+.div-star {
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 12px;
+    margin-left: 10px;
+
+    font-size: 10px;
+}
+
+.sub-div-star {
+    margin-top: -20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.client-happy .estrela {
+    width: 15px;
+    height: 15px;
+}
+
+
+.fone {
+    border: none;
+}
+
+@media only screen and (max-width: 899px) {
+    .after-header-main {
+        margin-top: -150px;
+        margin-bottom: -350px;
+    }
+
+    .esquerda {
+        margin-top: 20px;
+    }
+
+    .direita {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 579px) {
+    .after-header-main {
+        margin-top: -150px;
+        margin-bottom: -250px;
+    }
+
+    .img-main {
+        width: 400px;
+    }
+    
+
+    .esquerda {
+        width: 350px;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .img-main {
+        width: 350px;
+    }
+
+
+    .over {
+        width: 150px;
+        height: 50px;
+        font-size: 10px;
+    }
+
+    .over img {
+        width: 40px;
+    }
+
+    .over-s {
+        width: 200px;
+        height: 45px;
+        font-size: 10px;
+    }
+
+    .over-s img {
+        width: 40px;
+    }
+}

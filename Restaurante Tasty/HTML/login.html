@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../CSS/header.css">
+    
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbars/">
+
+    <link rel="stylesheet" href="../CSS/sign.css">
+
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Tangerine">
+<style>
+body {
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
+}
+</style>
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="navbar.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md" aria-label="Third navbar example">
+            <div class="container">
+              <p class="navbar-brand text-dark" href="#">
+                <strong class="text-warning">
+                    <img src="../img/logo tosty.png" alt="" id="logo">
+                    Tasty</strong>
+                Trails</p>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" id="openMenu">
+                    &#9776;
+                </span>
+              </button>
+        
+              <div class="collapse navbar-collapse" id="navbarsExample03">
+                <ul class="navbar-nav m-auto mb-2 mb-sm-0">
+                  <li class="nav-item">
+                    <a id="a" class="nav-link active text-dark" aria-current="page text-dark" href="home.html">Home</a>
+                  </li>
+                  <li id="a" class="nav-item">
+                    <a class="nav-link text-dark" href="#">Menu</a>
+                  </li>
+                  <li id="a" class="nav-item">
+                    <a class="nav-link text-dark" href="#" tabindex="-1" aria-disabled="true">Localização</a>
+                  </li>
+                  <li id="a" class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Serviços</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                      <li><a class="text-dark dropdown-item" href="#">Take away</a></li>
+                      <li><a class="text-dark dropdown-item" href="#">Almoço </a></li>
+                      <li><a class="dropdown-item" href="#">Bedidas diversas</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form>
+                  <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                  
+                  <input class="btn-outline-light form-control bg-warning text-light" type="button" aria-label="Search" value="Log In">
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section class="section">
+            <div class="container-img-left">
+                <img src="../img/logo tosty.png" class="section-logo" alt="">
+                <h1>Tasty Trails</h1>
+                <h6>O melhor restaurante que há para ti</h6>
+            </div>
+
+            <div class="div-container">
+                <div class="sub-container">
+                    <div class="tab-box">
+                        <button class="tab-btn active">Inscrever-se</button>
+                        <button class="tab-btn">Conecte-se</button>
+                        <div class="line"></div>
+                    </div>
+                    <div class="content-box">
+                        <div class="content active">
+                            <div class="redes">
+                                <img src="../img/pesquisa.png" alt="" class="logo-redes">
+
+                                <img src="../img/github-big-logo.png" alt="" class="logo-redes">
+                            
+                                <img src="../img/facebook.png" alt="" class="logo-redes">
+                            </div>
+                            <div class="div-sombra">
+                                <div class="sombra"></div>ou
+                                <div class="sombra"></div>
+                            </div>
+                            <div class="inputs-log">
+                                <label for="nome">
+                                    <p>Nome do usuário</p>
+                                    <input type="text" placeholder="por exemplo, Mario878">
+                                </label>
+                                <label for="email">
+                                    <p>E-mail</p>
+                                    <input type="email" placeholder="Exemplo@gmail.com">
+                                </label>
+                                <label for="password">
+                                    <p>Senha</p>
+                                    <input type="password">
+                                </label>
+                                <div class="forgat">
+                                    <p>Esqueceu a senha?</p>
+                                    <p><input type="checkbox">Lembrar</p>
+                                </div>
+                            </div>
+                            <button>Juntar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-box" id="container-sign">
+                    <div class="content">
+                        <div class="first">
+                            <label for="">
+                                <p>Primeiro Nome</p>
+                                <input type="text" class="same" placeholder="exemplo mario">
+                            </label>
+                            <label for="">
+                                <p>Segundo nome</p>
+                                <input type="text" class="same" placeholder="exemplo matias">
+                            </label>
+                        </div>
+                        <p id="emial-text">E-mail</p>
+                        <input type="email" class="email" placeholder="exemplo viquei@gmail.com">
+                        <div class="last">
+                            <label for="">
+                                <p>Senha</p>
+                                <input type="password" class="same">
+                            </label>
+                            <label for="">
+                                <p>Confirma senha</p>
+                                <input type="password" name="" id="" class="same">
+                            </label>
+                        </div>
+
+                        <button>Criar conta</button>
+                        <p class="text-bottom">Já tens uma conta? <a href="">Log In</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+</html>

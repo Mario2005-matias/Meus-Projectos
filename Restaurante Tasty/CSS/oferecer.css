@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1.300;1.400;1.500;1.600;1.700;1.800;1.900&display=swap');
+
+:root {
+    --color1: #fff;
+    --color2: #f0f0f0;
+    --color3: #edb92f;
+    --color4: #c84316;
+    --color5: #9c120a;
+    --color6: #000;
+    --color7: rgb(255, 187, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.oferecer {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+}
+
+.oferecer header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oferecer header h1 {
+    width: 400px;
+    font-size: 25px;
+    text-align: center
+}
+
+.oferecer header p {
+    width: 500px;
+    text-align: center;
+    margin: 1%;
+}
+
+.oferecer img {
+    width:  280px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.pratos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.prato {
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: -50px;
+}
+
+.prato  .detalhes-prato {
+    width: 250px;
+    height: 300px;
+    position: relative;
+
+    text-align: center;
+
+    border-radius: 10px;
+    top: -60px;
+    left: 0px;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+
+    padding: 20px 15px 20px 15px;
+}
+
+.prato .detalhes-prato:hover {
+    background-color: rgba(247, 202, 119, 0.678);
+}
+
+.preco {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.preco button {
+    width: 90px;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid var(--color7);
+    border-radius: 10px;
+}
+
+.preco button:hover{
+    background-color: var(--color7);
+}
+
+
+@media only screen and (max-width: 1039px) {
+    .oferecer {
+        margin-top: 400px;
+        margin-left: -40px;
+    }
+
+    .oferecer header {
+        text-align: center;
+        margin-right: -60px;
+    }
+}
+
+@media only screen and (max-width: 678px) {
+    .pratos {
+    }
+
+    .oferecer header h1 {
+        font-size: 5vw;
+        margin-left: auto;
+    }
+
+    .oferecer header p {
+        font-size: 14px;
+        width: 350px;
+        margin-left: auto;
+
+    }
+}
